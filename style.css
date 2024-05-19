@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 600px;
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px
+}
+
+.boton button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 24px;
+}
+.boton button:hover {
+  background-color: #0056b3;
+}
+
+.word{
+  font-size: 30px;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 45px;
+  margin:20px 0 0 0  !important;
+}
+
+.container h4 {
+  text-align: center;
+  font-weight: 300;
+  margin:0px !important;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
+/* Aplicar la animación a la palabra completa */
+#word-container {
+  display: inline-block;
+  font-size: 2em;
+  animation: heartbeat .5s infinite;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Estilos para los inputs */
+input[type="number"],
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: calc(100% - 40px);
+  margin: 5px 0px;
+}
+
+/* Estilos para el botón */
+.xd button {
+  padding: 8px 16px;
+  background-color: #007bff; /* Azul */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para el botón al pasar el mouse */
+.xd button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilos para el contenedor del formulario */
+#add-activity-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Estilos para la lista de palabras */
+#word-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para cada elemento de la lista */
+#word-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para las palabras */
+#word-list li span {
+  flex: 1;
+}
+
+/* Estilos para los botones */
+#word-list li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de duplicar */
+#word-list li .duplicate-button {
+  background-color: #28a745; /* Verde */
+}
+
+/* Estilos para el botón de quitar */
+#word-list li .remove-button {
+  background-color: #dc3545; /* Rojo */
+}
